@@ -1,6 +1,6 @@
 public class evendigits {
     public static void main(String[] args) {
-        int[] nums = { 1, 45, 678, 9087 };
+        int[] nums = { 1, 45, 678, 9087,1124 };
         System.out.println(FindNumbers(nums));
 
     }
