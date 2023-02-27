@@ -1,6 +1,4 @@
 // https://leetcode.com/problems/binary-search/solutions/
-
-import java.lang.annotation.Target;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -24,7 +22,8 @@ public class binarysearch {
         int high = nums.length - 1;
 
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = (low + high) / 2; //sometimes might give error , so better use
+            //low + (low-high)/2; since if the range of l+h exceeds that of int
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
