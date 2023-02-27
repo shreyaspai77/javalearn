@@ -26,7 +26,7 @@ public class CeilingNumbers {
             int mid = (low + high) / 2; // sometimes might give error , so better use
             // low + (low-high)/2; since if the range of l+h exceeds that of int
             if (arr[mid] == target) {
-                return arr[mid];
+                return mid;
             } else if (arr[mid] < target) {
 
                 low = mid + 1;
