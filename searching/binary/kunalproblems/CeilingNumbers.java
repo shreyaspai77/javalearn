@@ -34,7 +34,9 @@ public class CeilingNumbers {
             } else {
                 high = mid - 1;
             }
-            mid = (low + high) / 2;
+            mid = (low + high) / 2; //SINCE AFTER EXITING THE LOOP THE START BECOMES GREATER THAN THE END,
+//             START shows THE NEXT ELEMENT Greater than
+            //or equal to the answer
         }
 
         return low;
